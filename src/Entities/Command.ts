@@ -20,4 +20,4 @@ function Command<R>(ctx: CommandContext<R>) {
 	}
 }
 
-export default Command
+export { Command, CommandContext }

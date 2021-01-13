@@ -7,4 +7,4 @@ function Event({ type }: EventContext) {
 	}
 }
 
-export { Event, Events }
+export { Event, Events, EventContext }
