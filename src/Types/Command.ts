@@ -1,4 +1,4 @@
-type CommandContext<R> = {
+type Context<R> = {
 	name: string
 	description: string
 	tag: string
@@ -6,4 +6,4 @@ type CommandContext<R> = {
 	roles?: Array<R>
 }
 
-export default CommandContext
+export default Context

@@ -1,6 +1,6 @@
-import CommandContext from '../Interfaces/CommandContext'
+import Context from '../Types/Command'
 
-function Command<R>(ctx: CommandContext<R>) {
+function Command<R>(ctx: Context<R>) {
 	return function (target: any, propertyKey: string, descriptor: PropertyDescriptor, ...args: Array<any>) {
 		return Object.defineProperty(target, propertyKey, {
 			value: {
@@ -20,4 +20,4 @@ function Command<R>(ctx: CommandContext<R>) {
 	}
 }
 
-export { Command, CommandContext }
+export { Command }

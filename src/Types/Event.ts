@@ -1,7 +1,7 @@
 import Events from '../Enums/Events'
 
-type EventContext = {
+type Event = {
 	type: Events
 }
 
-export default EventContext
+export default Event

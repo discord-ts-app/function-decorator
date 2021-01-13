@@ -1,10 +1,10 @@
 import Events from '../Enums/Events'
-import EventContext from '../Interfaces/EventContext'
+import Context from '../Types/Event'
 
-function Event({ type }: EventContext) {
+function Event({ type }: Context) {
 	return function (target: any, propertyKey: string, descriptor: PropertyDescriptor, ...args: Array<any>) {
 		return Object.defineProperty(target, propertyKey, { value: { object: { module: 'EVENT', event: type, run: target[propertyKey] } } })
 	}
 }
 
-export { Event, Events, EventContext }
+export { Event, Events }

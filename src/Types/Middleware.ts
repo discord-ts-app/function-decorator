@@ -1,7 +1,7 @@
 import Lifecycles from '../Enums/Lifecycles'
 
-type MiddlewareContext = {
+type Middleware = {
 	lifecycle: Lifecycles
 }
 
-export default MiddlewareContext
+export default Middleware
