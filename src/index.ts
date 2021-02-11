@@ -1,9 +1,9 @@
 import { Command } from './Entities/Command'
-import { Event, Events } from './Entities/Event'
+import { Event } from './Entities/Event'
 import { Lifecycles, Middleware } from './Entities/Middleware'
 import Unused from './Entities/Unused'
 
-export { Event, Events }
+export { Event }
 export { Command }
 export { Middleware, Lifecycles }
 export { Unused }
